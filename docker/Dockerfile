@@ -1,4 +1,4 @@
-FROM schmittle/mushr_sim:stable
+FROM chazyman/noetic_mushr_sim:latest
 
 USER root
 #replace with your uid/gid
@@ -12,4 +12,4 @@ RUN export uid=1001 gid=1001 && \
 
 USER developer
 ENV HOME /home/developer
-CMD /bin/bash -c ". /opt/ros/melodic/setup.bash"
+CMD /bin/bash -c ". /opt/ros/noetic/setup.bash"
